@@ -4,7 +4,7 @@
 
 # Description
 
-An application to track the distance, duration, and exercises of a workout, using MongoDB, express routing, and Mongoose.
+Fitness Tracker application to track the distance, duration, and exercises of a workout, using MongoDB, express routing, and Mongoose.
 
 # Table of Contents
 
@@ -21,7 +21,10 @@ An application to track the distance, duration, and exercises of a workout, usin
 
 # Screenshot :
 
-<!-- ![Fitness Tracker]() -->
+|Fitness Tracker Home Page| Workout Dashboard
+|--|--
+|![Fitness Tracker](public/images/FitnessTracker.png)|![Fitness Tracker Dashboard](public/images/FitnessTrackerDashboard.png)
+
 
 # User Story
 
