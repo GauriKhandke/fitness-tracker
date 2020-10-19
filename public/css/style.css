@@ -17,12 +17,22 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #0E6EB8;
   color: #ffffff;
   height: 80px;
   padding: 10px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.navmenu{  
+  font-size: larger !important;
+}
+
+.navitem{
+  color: #ffffff !important;
+  font-weight: bolder !important;
 }
 
 a,
