@@ -1,6 +1,10 @@
+// Import express router
 const router = require("express").Router();
+
+// Import workout model
 const db = require("../models/exercise");
 
+// GET Request for getting all workouts
 router.get("/api/workouts", (req, res) => {
 	db.find()
 		.then((dbData) => {
@@ -11,6 +15,7 @@ router.get("/api/workouts", (req, res) => {
 		});
 });
 
+// GET request
 router.get("/api/workouts/range", (req, res) => {
 	db.find()
 		.then((dbData) => {
@@ -21,6 +26,7 @@ router.get("/api/workouts/range", (req, res) => {
 		});
 });
 
+// POST workout
 router.post("/api/workouts", ({ body }, res) => {
 	db.create(body)
 		.then((dbData) => {
@@ -31,6 +37,7 @@ router.post("/api/workouts", ({ body }, res) => {
 		});
 });
 
+// PUT/Update workout
 router.put("/api/workouts/:id", ({ body, params }, res) => {
 	db.findByIdAndUpdate(params.id, { $push: { exercises: body } })
 		.then((dbData) => {
@@ -41,4 +48,5 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
 		});
 });
 
+// Export API routes
 module.exports = router;
